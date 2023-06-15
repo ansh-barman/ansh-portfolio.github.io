@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:wght@400;700&family=Ubuntu:wght@400;700&display=swap');
+
+/* resets */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* yaha hum kuch global var bana rahe hai taaki hume inme se kuch change karna ho to baar baar na likhna pade */
+:root {
+    --primary-text-color: #2c2c2c;
+    --secondary-text-color: #5f96c9;
+    --accent-color: #5f36f1;
+    --accent-color-dark: #4420c9;
+    --padding-inline-section: 20px;
+    --background-problem-font-color: #6818e9;
+}
+
+/* ye good practice hai so that aap ek sath apni website pe color change kar sako */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-text-color);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+/* utility classes */
+
+.small-bold-text {
+    /* top banner me use karne ke liye ek 1 rem font size chahiye to niche wali class */
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.container {
+    max-width: 1500px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+
+.flex {
+    /* idhar ye daalne se isme jo bhi component daalenge wo khud flex ho jaega */
+    display: flex;
+    align-items: center;
+}
+
+.hover-link {
+    color: var(--primary-text-color);
+    transition: 0.2s ease-out;
+}
+
+.hover-link:hover {
+    color: var(--accent-color);
+}
+
+.primary-button {
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: aliceblue !important;
+    /* idhar important lagaya hai kyuki upar anchor tag me sabko black de rakhha hai to iska black na hoke white ho to usme important iski help karega */
+    padding: 7px 14px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+}
+
+.primary-button:hover {
+    background-color: var(--accent-color-dark);
+}
+
+.secondary-button {
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--primary-text-color) !important;
+    padding: 7px 14px;
+    transition: 0.2s ease-out;
+}
+
+.secondary-button:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+}
+
+/* top banner */
+
+.top-banner {
+    background-color: rgb(40, 41, 41);
+    background-image: url('./Assets/asset\ 32\ \(2\).png');
+    background-size: 250px;
+}
+
+.banner-text {
+    color: aliceblue;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+
+/* nav bar */
+
+.main-nav {
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.company-logo img {
+    width: 100px;
+}
+
+.nav-links {
+    flex-basis: 730px;
+}
+
+.nav-links ul {
+    justify-content: end;
+    gap: 40px;
+}
+
+/* header section */
+
+header {
+    padding: 50px var(--padding-inline-section) 0;
+}
+
+.header-section {
+    justify-content: center;
+    gap: 50px;
+}
+
+.header-left {
+    max-width: 40vw;
+}
+
+.header-left h1 {
+    margin-top: 20px;
+}
+
+.know-more-btn {
+    margin-top: 20px;
+}
+
+.header-right img {
+    box-shadow: 0 10px 20px rgb(0 0 0 / 0.5);
+    width: 600px;
+}
+
+/* companies section */
+
+.companies-header {
+    text-align: center;
+    margin-top: 100px;
+    color: var(--primary-text-color);
+}
+
+.logos {
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.logo {
+    height: 300px;
+}
+
+/* features section */
+
+.features-section {
+    padding: 80px var(--padding-inline-section) 0;
+    padding-bottom: 100px;
+    background-image: url(./Assets/asset\ 32.png);
+}
+
+.features-header {
+    text-align: center;
+}
+
+.features-header h2 {
+    margin-bottom: 20px;
+}
+
+.features-area {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 150px;
+}
+
+.features-card {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+    text-align: center;
+}
+
+.skill-font {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--background-problem-font-color);
+}
+
+.features-card img {
+    height: 336px;
+}
+
+/* big feature section */
+
+.big-feature-font {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
+.big-feature-section {
+    padding: 30px var(--padding-inline-section) 0;
+}
+
+.big-feature-container {
+    gap: 30px;
+}
+
+.feature-img img {
+    margin-top: 100px;
+    width: 100%;
+}
+
+.feature-description {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.big-feature-left {
+    flex-direction: row-reverse;
+}
+
+.h4-font {
+    font-size: smaller;
+}
+
+.h3-gap-font {
+    margin-bottom: 15px;
+}
+
+/* example section */
+
+.examples-header {
+    margin-top: 150px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.examples-card {
+    margin-top: 100px;
+    width: 23%;
+    position: relative;
+    min-height: 300px;
+    background-color: transparent;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.5)), url(./Assets/asset\ 38.png);
+    background-size: cover;
+    transition: 0.2s ease-out;
+}
+
+.examples-card:hover {
+    box-shadow: 0 0 10px #888;
+}
+
+.examples-card:nth-child(2) {
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.5)), url(./Assets/asset\ 37.png);
+    background-size: cover;
+}
+
+.examples-card:nth-child(3) {
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.5)), url(./Assets/asset\ 39.png);
+    background-size: cover;
+}
+
+.examples-card:nth-child(4) {
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.5)), url(./Assets/asset\ 36.png);
+    background-size: cover;
+}
+
+.card-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: aliceblue;
+}
+
+.exp-txt {
+    margin-top: 80px;
+}
+
+.examples-area {
+    justify-content: space-between;
+    margin-block: 30px;
+}
+
+/* cta section */
+
+.cta-section {
+    padding: 90px var(--padding-inline-section) 80px;
+    background-color: #183b54;
+}
+
+.cta-sec-container {
+    flex-direction: column;
+    gap: 20px;
+    color: aliceblue;
+}
+
+.cta-sec-container p {
+    margin-top: 20px;
+    color: aliceblue;
+}
+
+/* footer sextion */
+
+footer {
+    padding-block: 80px;
+    background-color: #ebf2fa;
+}
+
+.link-column {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-container {
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.company-logo-footer img {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    bottom: 115px;
+}
+
+/* subfooter section */
+
+.subfooter {
+    background-color: #b9cde4;
+    padding: var(--padding-inline-section);
+}
+
+.subfooter-container {
+    justify-content: center;
+    gap: 30px;
+}
+
+.translate-btn {
+    width: 70px;
+    height: 20px;
+    font-size: 12px;
+    padding: 0;
+    border: 0px;
+    margin-bottom: 13px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+.dark-mode {
+    color: white;
+    background: #212121;
+}
+
+.mode-btn {
+    border: 0px;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+body::-webkit-scrollbar-thumb {
+    border: 1px;
+    border-radius: 5px;
+    background: #9c81ff;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.skill-btn {
+    background-color: transparent;
+    border: 1.5px solid orangered;
+    padding: 10px;
+    border-radius: 6px;
+    transition: 0.2s ease-out;
+    color: orange;
+
+}
+
+.skill-btn:hover {
+    color: var(--background-problem-font-color);
+}
+
+#header-about {
+    min-height: 100vh;
+}
+
+.footer-head {
+    color: #212121;
+}

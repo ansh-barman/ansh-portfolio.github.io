@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansh Barman</title>
+    <link rel="icon" type="image/x-icon" href="./Assets/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- jitne divs aur sections hai pehle hi bana lia karo thats good practice-->
+    <div class="top-banner">
+        <div class="container">
+            <div class="small-bold-text banner-text">Wanna know me? jump right in...</div>
+        </div>
+
+    </div>
+
+    <nav>
+        <div class="container main-nav flex">
+            <a class="company-logo">
+                <img id="logo" src="./Assets/ab.png" alt="company logo">
+
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li><a href="index.html" class="hover-link light_mode">Home</a></li>
+                    <li><a href="#Projects" class="hover-link light_mode">Projects</a></li>
+                    <li><a href="#Skills" class="hover-link light_mode">Skills</a></li>
+                    <li><a href="#Experience" class="hover-link light_mode">Experience</a></li>
+                    <li><a href="#Contact" class="hover-link  light_mode">Contact</a></li>
+                    <li><a href="about.html" class="hover-link primary-button">About</a></li>
+                    <li><button class="mode-btn" onclick="darkmode()" id="modebutton"><i
+                                class="fa-solid fa-moon"></i></button></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div id="header" class="container header-section flex light_mode">
+            <div class="header-left">
+                <h1 id="welcome_text">おはよう</h1>
+                <button onclick="changeText()" class="primary-button translate-btn">Translate</button>
+                <p>Hey! a bit strange innit? So About me huh, I'm basically a nerd. I guess you can call me that, as if
+                    anything is related to tech or cars I'm the go to person for everyone close to me. When it comes to
+                    cars, I am someone who loves cars so much that I live and die cars...</p>
+                <a href="about.html" class="primary-button know-more-btn">Know More</a>
+            </div>
+            <div class="header-right">
+                <img class="my-image" src="./Assets/asset 2 (2).png" alt="hero image">
+            </div>
+        </div>
+    </header>
+
+    <section class="companies-section">
+        <div id="companies" class="container light_mode">
+            <div class="small-bold-text companies-header light-mode">"If it works it's not a bug, it's a feature"</div>
+            <div class="logos flex">
+                <img id="complogo1" class="logo" src="./Assets/logo 2.png" alt="">
+                <img id="complogo2" class="logo" src="./Assets/tq.png" alt="">
+                <img id="complogo3" class="logo" src="./Assets/Pink Minimal Typography Logo .png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="Skills" class="features-section">
+        <div class="container">
+            <div class="features-header">
+                <h2>Damn I'm Skilled isn't it?</h2>
+                <a href="#" class="skill-btn light_mode" id="see0">See More <i
+                        class="fa-regular fa-circle-right"></i></a>
+            </div>
+            <div class="features-area flex">
+                <div class="features-card flex">
+                    <img src="./Assets/html.png" alt="">
+                    <h3>Html5</h3>
+                    <p class="skill-font">The holy grail of coding</p>
+                    <a href="#" class="skill-btn light_mode" id="see1">Learn More <i
+                            class="fa-regular fa-circle-right"></i></a>
+                </div>
+                <div class="features-card flex">
+                    <img src="./Assets/css.png" alt="">
+                    <h3>Css3</h3>
+                    <p class="skill-font">It's a gift</p>
+                    <a href="#" class="skill-btn light_mode" id="see2">Learn More <i
+                            class="fa-regular fa-circle-right"></i></a>
+                </div>
+                <div class="features-card flex">
+                    <img src="./Assets/JavaScript-logo.png" alt="">
+                    <h3>JavaScript</h3>
+                    <p class="skill-font">The stepping stones of coding</p>
+                    <a href="#" class="skill-btn light_mode" id="see3">Learn More <i
+                            class="fa-regular fa-circle-right"></i></a>
+                </div>
+                <div class="features-card flex">
+                    <img src="./Assets/node.png" alt="">
+                    <h3>Node</h3>
+                    <p class="skill-font">The meh part of coding</p>
+                    <a href="#" class="skill-btn light_mode" id="see4">Learn More <i
+                            class="fa-regular fa-circle-right"></i></a>
+                </div>
+                <div class="features-card flex">
+                    <img src="./Assets/React-icon.png" alt="">
+                    <h3>React</h3>
+                    <p class="skill-font">I'm in love</p>
+                    <a href="#" class="skill-btn light_mode" id="see5">Learn More <i
+                            class="fa-regular fa-circle-right"></i></a>
+                </div>
+                <div class="features-card flex">
+                    <img src="./Assets/MongoDB_Logo.png" alt="">
+                    <h3>Mongo</h3>
+                    <p class="skill-font">Just why?</p>
+                    <a href="#" class="skill-btn light_mode" id="see6">Learn More <i
+                            class="fa-regular fa-circle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Projects" class="light_mode">
+        <section class="big-feature-section">
+            <div class="container flex big-feature-container">
+                <div class="feature-img">
+                    <img src="./Assets/logo 2.png" alt="">
+                </div>
+                <div class="feature-description flex">
+                    <h4 class="h4-font">Project Description</h4>
+                    <h3 class="h3-gap-font">FeedBack Hub</h3>
+                    <p class="big-feature-font">It is a portal for students to raise queries or to generate feedback for
+                        the
+                        services provided by the college</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="big-feature-section">
+            <div class="container flex big-feature-container big-feature-left ">
+                <div class="feature-img">
+                    <img class="th-img" src="./Assets/asset 21 (2).png" alt="">
+                </div>
+                <div class="feature-description flex">
+                    <h4 class="h4-font">Project Description</h4>
+                    <h3 class="h3-gap-font">TorqHeads</h3>
+                    <p class="big-feature-font">It's a place for automobile enthusiasts to connect,
+                        have fun, learn, share and interact<br> with all type of car related stuff.
+                        Our goal is to build India's best and biggest car community!
+                    </p>
+                </div>
+        </section>
+
+        <section class="big-feature-section">
+            <div class="container flex big-feature-container ">
+                <div class="feature-img">
+                    <img class="aide-img" src="./Assets/asset 24.png" alt="">
+                </div>
+                <div class="feature-description flex">
+                    <h4 class="h4-font">Project Description</h4>
+                    <h3 class="h3-gap-font">Ardian IDE</h3>
+                    <p class="big-feature-font">It's a tool for minimalists and students to work,
+                        learn, improve and enjoy the essence of coding<br> without worrying about the errors and all
+                        type
+                        complex UI shenanigans.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="Experience" class="example-section light_mode">
+        <div class="container">
+            <div class="examples-header flex">
+                <h2>A cup of coffee is enough to fuel even a dead engineer :)</h2>
+                <a href="#" class="skill-btn">Follow Me <i class="fa-regular fa-circle-right"></i></a>
+                <h2 class="exp-txt">My Experience</h2>
+            </div>
+            <div class="examples-area flex">
+
+                <a href="#" class="examples-card">
+                    <h3 class="card-text">Web Development Intern, Code Clause</h3>
+                </a>
+                <a href="#" class="examples-card">
+                    <h3 class="card-text">Co-founder,<br> TorqHeads</h3>
+                </a>
+                <a href="#" class="examples-card">
+                    <h3 class="card-text">Content Lead, Google Developers Students Club</h3>
+                </a>
+                <a href="#" class="examples-card">
+                    <h3 class="card-text">Content Writer & Team Lead, LetsGrowMore</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="Contact" class="cta-section">
+        <div class="container flex cta-sec-container">
+            <h2>
+                Until we meet again!
+            </h2>
+            <p class="big-feature-font">Feel Free to Connect</p>
+            <a href="https://www.linkedin.com/in/ansh-barman-6159201ba/" class="primary-button">LinkedIn</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container flex footer-container">
+            <div class="grills">
+                <a href="#" class="company-logo-footer">
+                    <img src="./Assets/ab2.png" alt="company-logo-footer">
+                </a>
+            </div>
+            <div class="link-column flex">
+                <h4 class="footer-head">Tags</h4>
+                <a href="#" class="hover-link">Engineer</a>
+                <a href="#" class="hover-link">Entrepreneur</a>
+                <a href="#" class="hover-link">Student</a>
+                <a href="#" class="hover-link">DCE</a>
+                <a href="#" class="hover-link">GDSC-DCE</a>
+            </div>
+            <div class="link-column flex">
+                <h4 class="footer-head">Resources</h4>
+                <a href="#" class="hover-link">GFG</a>
+                <a href="#" class="hover-link">W3School</a>
+                <a href="#" class="hover-link">YouTube</a>
+                <a href="#" class="hover-link">Anuj Bhatia</a>
+                <a href="#" class="hover-link">Jatin Vats</a>
+            </div>
+            <div class="link-column flex">
+                <h4 class="footer-head">Socials</h4>
+                <a href="#" class="hover-link">Instagram</a>
+                <a href="#" class="hover-link">Facebook</a>
+                <a href="#" class="hover-link">LinkedIn</a>
+                <a href="#" class="hover-link">Github</a>
+                <a href="#" class="hover-link">Ghar Aajao</a>
+            </div>
+        </div>
+    </footer>
+
+    <section class="subfooter">
+        <div class="container flex subfooter-container">
+            <a class="hover-link" href="#">© 2023 by Ansh Barman</a>
+            <a class="hover-link" href="#"> &nbsp;•&nbsp;</a>
+            <a class="hover-link" href="#">barmanansh99@gmail.com</a>
+            <a class="hover-link" href="#"> &nbsp;•&nbsp;</a>
+            <a class="hover-link" href="https://www.facebook.com/finding.ansh18/"> <i
+                    class="fa-brands fa-facebook">&nbsp;&nbsp;</i></a>
+            <a class="hover-link" href="https://twitter.com/BarmanAnsh"> <i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/279d0bae73.js" crossorigin="anonymous"></script>
+    <!--ye humne dala taaki yaha se icons use kar sake-->
+</body>
+
+</html>

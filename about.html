@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansh Barman</title>
+    <link rel="icon" type="image/x-icon" href="./Assets/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- jitne divs aur sections hai pehle hi bana lia karo thats good practice-->
+    <div class="top-banner">
+        <div class="container">
+            <div class="small-bold-text banner-text">Wanna know me? jump right in...</div>
+        </div>
+
+    </div>
+
+    <nav>
+        <div class="container main-nav flex">
+            <a class="company-logo">
+                <img id="logo" src="./Assets/ab.png" alt="company logo">
+
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li><a href="index.html" class="hover-link light_mode">Home</a></li>
+                    <li><a href="#Projects" class="hover-link light_mode">Projects</a></li>
+                    <li><a href="#Skills" class="hover-link light_mode">Skills</a></li>
+                    <li><a href="#Experience" class="hover-link light_mode">Experience</a></li>
+                    <li><a href="#Contact" class="hover-link  light_mode">Contact</a></li>
+                    <li><a href="about.html" class="hover-link primary-button">About</a></li>
+                    <li><button class="mode-btn" onclick="darkmode()" id="modebutton"><i
+                                class="fa-solid fa-moon"></i></button></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div id="header-about" class="container header-section flex light_mode">
+            <div class="header-left">
+                <h1 id="welcome_text">おはよう</h1>
+                <button onclick="changeText()" class="primary-button translate-btn">Translate</button><br><br><br>
+                <p>Hey! a bit strange innit? So About me huh, I'm basically a nerd.
+                    I guess you can call me that, as if anything is related to tech or cars
+                    I'm the go to person for everyone close to me. When it comes to cars,
+                    I am someone who loves cars so much that I live and die car.<br><br>
+                    So, for an introduction, I am Ansh Barman, based in Delhi. I've completed
+                    my higher secondary schooling from Air Force Bal Bharti School and my Senior secondary
+                    from Masonic Public School. <br><br>In my school days I was very enthusiastic and participated
+                    in several co-curricular activities like debates, presentations, exhibitions, NCC, etc.
+                    All these activities helped me gain the basic command over my communication skills and stuff.
+                    <br><br>After my 12th, I'm currently pursuing my final year Btech in CSE from Dronacharya college
+                    of Engineering. If we talk about my hobbies I have a keen interest in latest technologies and
+                    automobiles.
+                    Also, I love to cook and write and as you may have observed by now I'm a pretty fun
+                    loving person and I like to interact with new people so, if you want to connect with me
+                    then please reach out to me on my LinkedIn / Instagram / Mail. See you there!
+                </p>
+
+            </div>
+            <div class="header-right">
+                <img class="my-image" src="./Assets/asset 2 (2).png" alt="hero image">
+            </div>
+        </div>
+    </header>
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/279d0bae73.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
